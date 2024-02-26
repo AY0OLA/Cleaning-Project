@@ -1,0 +1,107 @@
+:root {
+  --color: rgba(62, 197, 250, 1);
+}
+.links {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  position: absolute;
+  top: 0.001rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(src/image/background.JPG) no-repeat;
+  background-size: cover;
+  margin: auto;
+  .homeContainer {
+    width: 100%;
+    height: max-content;
+    padding: 0 20rem 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    z-index: 100;
+
+    .object {
+      .service {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .text {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #333;
+        margin-bottom: 2rem;
+      }
+      .content {
+        width: 100px;
+        font-weight: lighter;
+        color: #333;
+      }
+      .click {
+        margin-top: 2rem;
+        .icon {
+          padding: 0.9rem 2rem;
+          background: var(--color);
+          color: #fff;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+        }
+        .offer {
+          padding: 0.9rem 2rem;
+          background: transparent;
+          color: var(--color);
+          border-radius: 10px;
+          border: 1px solid var(--color);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1067px) {
+  .links {
+    .homeContainer {
+      margin-top: 8rem;
+      padding: 0 1rem 2rem;
+      .object {
+        .text {
+          font-size: 1.5rem;
+        }
+        .click {
+          .offer {
+            margin-top: 0.5rem;
+            padding: 0.8rem 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  .links {
+    .homeContainer {
+      padding: 0;
+      .object {
+        .service {
+          font-size: 0.8rem;
+        }
+        .text {
+          font-size: 0.9rem;
+        }
+        .click {
+          .offer {
+            margin-top: 0.5rem;
+            padding: 0.8rem 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}

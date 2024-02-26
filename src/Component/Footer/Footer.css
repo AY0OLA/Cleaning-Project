@@ -1,0 +1,225 @@
+:root {
+  --color: rgba(62, 197, 250, 1);
+}
+.FooterCard {
+  margin-top: 3rem;
+  background-color: color-mix(in srgb, var(--color), transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  .information {
+    background-color: var(--color);
+    padding: 3rem 5rem;
+    margin: 3rem;
+    width: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2vw 2vw 2vw 1vw
+      color-mix(in srgb, var(--color), transparent 70%);
+    .input {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      input {
+        background: #fff;
+        margin-top: 0.4rem;
+        padding: 10px;
+        color: #333;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+    .email {
+      margin-top: 1rem;
+      display: flex;
+      color: #fff;
+      flex-direction: column;
+      .Email {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      input {
+        background: #fff;
+        margin-top: 0.4rem;
+        padding: 10px;
+        color: #333;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+    .Message {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      .message {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      textarea {
+        width: 90%;
+        background: #fff;
+        margin-top: 0.4rem;
+        padding: 10px;
+        color: #333;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+    .btn {
+      color: #fff;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: gold;
+      width: 100%;
+    }
+  }
+  .service {
+    margin-top: 6rem;
+    background: var(--color);
+    color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .serContent {
+      .about {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+      .next {
+        margin: 1.5rem;
+        span {
+          font-size: 1rem;
+          font-weight: 200;
+        }
+      }
+      .btn {
+        color: #fff;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: gold;
+        width: 100%;
+      }
+    }
+    .Seccall {
+      margin-top: 3rem;
+      display: flex;
+      text-align: left;
+      font-size: 1.1rem;
+      .clean {
+        margin-top: 1rem;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        .heading {
+          display: flex;
+          font-size: 1.4rem;
+          .icon {
+            color: #fff;
+          }
+        }
+        .us {
+          margin-top: 2rem;
+          font-weight: 200;
+        }
+        .ico {
+          margin-top: 1rem;
+
+          .fa {
+            margin-left: 1rem;
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 5px;
+            color: var(--color);
+            font-size: 1.3rem;
+            background: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+      .navigator {
+        margin-left: 2rem;
+        h3 {
+          color: #fff;
+          font-size: 1.4rem;
+        }
+        ul {
+          li {
+            font-weight: 200;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+      .Links {
+        margin-left: 2rem;
+        h3 {
+          color: #fff;
+          font-size: 1.4rem;
+        }
+        ul {
+          li {
+            font-weight: 200;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+      .company {
+        margin-left: 2rem;
+        h3 {
+          color: #fff;
+          font-size: 1.4rem;
+        }
+        ul {
+          li {
+            font-weight: 200;
+            margin-top: 0.4rem;
+            .con {
+              margin-right: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  .FooterCard {
+    .information {
+      padding: 1rem 3rem;
+      .btn {
+        padding: 8px;
+      }
+    }
+    .service {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 2rem;
+      .Seccall {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+:root {
+  --color: rgba(62, 197, 250, 1);
+}
+.Body {
+  position: absolute;
+  top: 100%;
+
+  padding: 2rem 3rem;
+  .Our {
+    h3 {
+      line-height: 0.1px;
+      font-size: 1.5rem;
+    }
+
+    .more {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-top: 2.5rem;
+      .text {
+        display: flex;
+        flex-direction: column;
+      }
+      .see {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        .arrow {
+          color: #fff;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .bodygride {
+    padding: 5rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .Destination {
+      border: 1px solid var(--color);
+      padding: 2rem;
+      border-radius: 10px;
+      .house {
+        .home {
+          background-color: var(--color);
+          font-size: 2rem;
+          color: #fff;
+          padding: 0.5rem 0.7rem;
+        }
+      }
+
+      .dics {
+        margin-top: 2rem;
+        .head {
+          text-align: center;
+          color: #333;
+          font-size: 1.5rem;
+          font-weight: bolder;
+        }
+        .discription {
+          margin-top: 1rem;
+          font-weight: 600;
+          font-size: 1rem;
+        }
+        .click {
+          margin-top: 2rem;
+          display: flex;
+          text-align: center;
+          align-items: center;
+
+          a {
+            font-size: 1rem;
+            text-decoration: underline;
+          }
+          .forward {
+            font-size: 1.4rem;
+            margin-top: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 705px) {
+  .Body {
+    h1 {
+      font-size: 0.7rem;
+    }
+    .Our {
+      h3 {
+        font-size: 1rem;
+      }
+      .more {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        align-items: first baseline;
+        .text {
+          font-size: 0.8rem;
+        }
+        .see {
+          margin-top: 1rem;
+        }
+      }
+    }
+    .bodygride {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .Body {
+    .bodygride {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
