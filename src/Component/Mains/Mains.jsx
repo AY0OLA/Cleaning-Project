@@ -6,13 +6,9 @@ import { IoStarSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
-import { MdCleaningServices } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 const Mains = () => {
   const Data = [
     {
@@ -41,14 +37,14 @@ const Mains = () => {
   }, []);
   return (
     <section>
-      <div className="Mains ">
+      <div className="MaIns ">
         <h1 data-aos="fade-right">-- Get our Service</h1>
-        <div data-aos="fade-up" className="secContent">
-          <div className="first ">
-            <h2 data-aos="fade-up">How To Get Our Service</h2>
+        <div data-aos="fade-up" className="secCOntent">
+          <div data-aos="fade-up" className="first ">
+            <h2 data-aos="fade-right">How To Get Our Service</h2>
 
-            <div data-aos="fade-up" className="singleDestination">
-              <div className="one">
+            <div data-aos="fade-up" className="singleDEstination">
+              <div data-aos="fade-up" className="one">
                 <div className="fileIcon">
                   <FaRegFileAlt />
                 </div>
@@ -59,7 +55,7 @@ const Mains = () => {
                   </span>
                 </div>
               </div>
-              <div className="one">
+              <div data-aos="fade-up" className="one">
                 <div className="fileIcon">
                   <FaRegFileAlt />
                 </div>
@@ -70,7 +66,7 @@ const Mains = () => {
                   </span>
                 </div>
               </div>
-              <div className="two">
+              <div data-aos="fade-up" className="two">
                 <div className="fileIcon">
                   <FaRegFileAlt />
                 </div>
@@ -86,9 +82,9 @@ const Mains = () => {
           <div data-aos="fade-up" className="second">
             <img src="src/image/new.png" alt="clearner" className="replace" />
 
-            <div data-aos="fade-up" className="house">
+            <div className="house">
               <img src="src/image/new2.png" alt="" className="home" />
-              <div data-aos="fade-up" className="state">
+              <div className="state">
                 <strong>Fringilla scelerisque</strong> in imperdiet nisi erat in
                 id. Vel fermentum aenean aenean id ornare vitae sapien nulla
                 auctor. At nisl sem eget orci pretium sed.
@@ -97,24 +93,22 @@ const Mains = () => {
           </div>
         </div>
         <div data-aos="fade-up" className="secondSec">
-          <span data-aos="fade-up">
-            We Make Sanitizing Services Simple And Easy For You
-          </span>
-          <div data-aos="fade-up" className="than">
+          <span>We Make Sanitizing Services Simple And Easy For You</span>
+          <div className="than">
             <span>More Than Just Cleaning</span>
           </div>
         </div>
-        <div data-aos="fade-up" className="Secsecond">
-          <span>
+        <div className="Secsecond">
+          <span data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
             sollicitudin sem. Ut tempus ligula eget vestibulum dapibus. Sed ac
             pulvinar massa. Class aptent
           </span>
         </div>
-        <div data-aos="fade-up" className="data">
+        <div className="data">
           {Data.map(({ id, Num, note }) => {
             return (
-              <div key={id} className="numbers ">
+              <div key={id} className="numbers " data-aos="fade-up">
                 <div className="Note">
                   <div className="Num">{Num}</div>
                   <div className="note">{note}</div>
@@ -123,15 +117,15 @@ const Mains = () => {
             );
           })}
         </div>
-        <div data-aos="fade-up" className="footer">
-          <div data-aos="fade-up" className="client section">
-            <h3 data-aos="fade-up">--Happy clients</h3>
-            <span data-aos="fade-up">What Our Client Say’s</span>
-            <div data-aos="fade-up" className="text">
+        <div className="footer">
+          <div data-aos="fade-up" className="client">
+            <h3>--Happy clients</h3>
+            <span>What Our Client Say’s</span>
+            <div className="text" data-aos="fade-right">
               This is what clients have been saying after using the great
               service we do for clients.
             </div>
-            <div data-aos="fade-up" className="return">
+            <div className="return" data-aos="fade-up">
               <div className="returnContent">
                 <div className="returnSpace">
                   <div className="icon">
@@ -218,17 +212,17 @@ const Mains = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" className="contact section">
-            <div data-aos="fade-up" className="secContact">
-              <h1 data-aos="fade-right">--CONTACT</h1>
-              <div data-aos="fade-up" className="span">
+          <div className="contact">
+            <h1 data-aos="fade-right">--CONTACT</h1>
+            <div className="secContact">
+              <div className="span" data-aos="fade-up">
                 <span className="touch">Get In Touch</span>
                 <span className="team">
                   Fill up the form and our Team will get back to you within 24
                   hours.
                 </span>
               </div>
-              <div data-aos="fade-up" className="call">
+              <div className="call" data-aos="fade-up">
                 <div className="means">
                   <div className="phone">
                     <FaPhone />
@@ -247,7 +241,7 @@ const Mains = () => {
                     <span className="Num">info@companyemail.com</span>
                   </div>
                 </div>
-                <div className="mean">
+                <div className="means">
                   <div className="phone">
                     <IoLocationSharp />
                   </div>
@@ -260,103 +254,7 @@ const Mains = () => {
                 </div>
               </div>
             </div>
-            <div data-aos="fade-up" className="information">
-              <div className="input">
-                <span className="name">Name:</span>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div className="email">
-                <span className="Email">Email*</span>
-                <input type="email" placeholder="Your Email" />
-              </div>
-              <div className="Message">
-                <span className="message">Message</span>
-                <textarea
-                  name=""
-                  placeholder="Your Message"
-                  id=""
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-              <a href="#" className="button">
-                Book A Schedule
-              </a>
-            </div>
           </div>
-          <div data-aos="fade-up" className="service ">
-            <div className="serContent">
-              <div className="about">
-                <span className="company">Best Cleaning</span>
-                <span className="company">Service Company</span>
-              </div>
-              <div className="next">
-                <span>
-                  Quisque imperdiet mauris nec faucibus vestibulum. Ut
-                  vestibulum est ac hendrerit pharetra. Integer sit amet laoreet
-                  lectus
-                </span>
-              </div>
-              <a href="#" className="button">
-                Appointment
-              </a>
-            </div>
-          </div>
-          {/* <div data-aos="fade-up" className="Seccall">
-            <div data-aos="fade-up" className="clean">
-              <div className="heading">
-                <MdCleaningServices className="icon" />
-                <h4>Cleanzer</h4>
-              </div>
-              <div className="us">
-                <span>
-                  We Are Premium Cleaning Company in USA ready to make your life
-                  easier!!
-                </span>
-              </div>
-              <div className="ico">
-                <FaFacebookF className="fa" />
-                <FaXTwitter className="fa" />
-                <FaInstagram className="fa" />
-                <FaYoutube className="fa" />
-              </div>
-            </div>
-            <div data-aos="fade-up" className="navigator">
-              <h3>Navigation</h3>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div data-aos="fade-up" className="Links">
-              <h3>Quick Links</h3>
-              <ul>
-                <li>Privacy Policy</li>
-                <li>Terms Of Service</li>
-                <li>Disclaimer</li>
-                <li>Faq</li>
-              </ul>
-            </div>
-            <div data-aos="fade-up" className="company">
-              <h3>Contact Info</h3>
-              <ul>
-                <li>
-                  <FaPhone className="con" />
-                  123-456-7890
-                </li>
-                <li>
-                  <IoIosMail className="con" />
-                  info@companyemail.com
-                </li>
-                <li>
-                  <IoLocationSharp className="con" />
-                  1111 Avenue Francis Road, Laval, USA
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

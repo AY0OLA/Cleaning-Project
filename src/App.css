@@ -2,23 +2,16 @@
 :root {
   --color: rgba(62, 197, 250, 1);
 }
-body {
-  font-family: "Plus Jakarta Sans";
-  margin: 0;
-  display: flex;
-  place-items: center;
-  position: relative;
-}
 
-.section {
+/* .section {
   padding: 4rem 0 2rem;
-}
-.flex {
+} */
+/* .flex {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
+} */
 .shadow {
   z-index: 100;
 }

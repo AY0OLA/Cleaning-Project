@@ -15,10 +15,10 @@ const Header = () => {
     setActive("navBar");
   };
   return (
-    <section className="section">
-      <header className="header flex">
+    <>
+      <header className="header">
         <div className="logoDiv">
-          <a href="#" className="logo flex">
+          <a href="#" className="logo">
             <h1>
               <MdCleaningServices className="icon" />
               Cleanzer
@@ -27,7 +27,7 @@ const Header = () => {
         </div>
 
         <div className={active}>
-          <ul className="navLists flex">
+          <ul className="navLists">
             <li className="navItem">
               <a href="#" className="navLink">
                 Home
@@ -53,19 +53,21 @@ const Header = () => {
                 Referral
               </a>
             </li>
-            <button className="btn">
-              <a href="#">Request An Estimate</a>
-            </button>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar">
             <IoMdCloseCircle classname="icon" />
+          </div>
+          <div className="ntg">
+            <button className="btn">
+              <a href="#">Request An Estimate</a>
+            </button>
           </div>
         </div>
         <div onClick={showNav} className="toggleNavbar">
           <TbGridDots className="icon" />
         </div>
       </header>
-    </section>
+    </>
   );
 };
 export default Header;

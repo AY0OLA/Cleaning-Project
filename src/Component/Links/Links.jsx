@@ -17,9 +17,8 @@ const Links = () => {
           </span>
 
           <div className="text" data-aos="fade-up">
-            <span>We Are Premium Cleaning</span>
-            <span>Company located in USA ready</span>
-            <span>to make your life easier!!</span>
+            We Are Premium Cleaning Company located in USA ready to make your
+            life easier!!
           </div>
           <span data-aos="fade-up" className="content">
             At Cleanzer Crystal Clean, we believe in building a relationship
@@ -30,10 +29,10 @@ const Links = () => {
           </span>
 
           <div data-aos="fade-up" className="click">
-            <button className="icon">
+            <button className="btn icon">
               Book A Schedule <MdArrowOutward />
             </button>
-            <button className="offer">
+            <button className="btn offer">
               Our Best Offer <MdArrowOutward />
             </button>
           </div>

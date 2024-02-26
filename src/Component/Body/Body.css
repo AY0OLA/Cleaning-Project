@@ -2,120 +2,109 @@
   --color: rgba(62, 197, 250, 1);
 }
 .Body {
-  position: absolute;
-  top: 100%;
-
-  padding: 2rem 3rem;
+  padding: 1.6rem 4rem;
   .Our {
     h3 {
-      line-height: 0.1px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
-
     .more {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      flex-wrap: wrap;
       text-align: center;
-      margin-top: 2.5rem;
+      align-items: center;
+      gap: 10px;
       .text {
         display: flex;
         flex-direction: column;
       }
-      .see {
-        text-align: center;
-        justify-content: center;
+      .btn {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
         display: flex;
+        justify-content: center;
+        text-align: center;
         .arrow {
-          color: #fff;
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
       }
     }
   }
-
   .bodygride {
-    padding: 5rem 2rem 2rem;
+    margin-top: 3rem;
+    gap: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
     .Destination {
       border: 1px solid var(--color);
-      padding: 2rem;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem 1rem;
       .house {
         .home {
-          background-color: var(--color);
-          font-size: 2rem;
+          padding: 20px;
           color: #fff;
-          padding: 0.5rem 0.7rem;
+          background-color: var(--color);
+          font-size: 1.5rem;
         }
       }
-
       .dics {
-        margin-top: 2rem;
+        margin-top: 1rem;
         .head {
           text-align: center;
-          color: #333;
-          font-size: 1.5rem;
-          font-weight: bolder;
+          font-size: 1.6rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
         }
         .discription {
-          margin-top: 1rem;
-          font-weight: 600;
-          font-size: 1rem;
-        }
-        .click {
-          margin-top: 2rem;
-          display: flex;
           text-align: center;
-          align-items: center;
-
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+        .clic {
+          display: flex;
+          border: 1px solid var(--color);
+          padding: 10px;
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+          max-width: 150px;
+          color: var(--color);
+          cursor: pointer;
+          font-size: 1rem;
+          border-radius: 5px;
           a {
-            font-size: 1rem;
-            text-decoration: underline;
+            color: var(--color);
           }
-          .forward {
-            font-size: 1.4rem;
-            margin-top: 0.3rem;
+          &:hover {
+            background: var(--color);
+            color: #fff;
+            border: none;
+
+            a {
+              color: #fff;
+            }
           }
         }
       }
     }
   }
 }
-@media (max-width: 705px) {
+@media (max-width: 1059px) {
   .Body {
-    h1 {
-      font-size: 0.7rem;
-    }
-    .Our {
-      h3 {
-        font-size: 1rem;
-      }
-      .more {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: left;
-        align-items: first baseline;
-        .text {
-          font-size: 0.8rem;
-        }
-        .see {
-          margin-top: 1rem;
-        }
-      }
-    }
     .bodygride {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-
-@media (max-width: 525px) {
+@media (max-width: 700px) {
   .Body {
     .bodygride {
+      display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
   }

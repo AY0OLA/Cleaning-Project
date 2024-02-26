@@ -1,109 +1,94 @@
 :root {
   --color: rgba(62, 197, 250, 1);
 }
-.Mains {
-  position: absolute;
-  top: 250%;
-  width: 100%;
-  background-color: aliceblue;
+.MaIns {
+  margin-top: 3rem;
   h1 {
-    padding: 2rem 4rem;
+    padding: 0 3rem;
   }
-  .secContent {
-    padding: 0 12rem;
-    margin-top: 3rem;
+  .secCOntent {
+    padding: 2rem 4rem;
+    background-color: color-mix(in srgb, var(--color), transparent 70%);
     display: flex;
     justify-content: space-between;
 
     .first {
       h2 {
-        font-size: 2rem;
-        color: #000;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
       }
-      .singleDestination {
+      .singleDEstination {
+        margin-top: 2rem;
         .one {
-          display: flex;
-          border-bottom: 1px solid #333;
-          padding-bottom: 2rem;
-          width: 100%;
-          padding-top: 2rem;
-
+          margin-top: 1rem;
+          border-bottom: 2px solid #333;
+          padding: 1rem 1rem;
           .fileIcon {
-            background-color: rgba(237, 241, 252, 1);
             color: var(--color);
-            padding: 2rem 2rem;
-            font-size: 3rem;
+            font-size: 2.7rem;
+            margin-bottom: 1rem;
           }
           .file {
-            flex-direction: column;
             display: flex;
-            padding-left: 2rem;
-            margin-top: 2rem;
+            flex-direction: column;
+            text-align: center;
             .heading {
-              color: #333;
-              margin-bottom: 1rem;
-              font-size: 2rem;
+              color: #fff;
+              font-size: 1.6rem;
             }
             .discription {
-              font-size: 1rem;
-              font-weight: lighter;
-              color: #333;
+              font-size: 1.2rem;
+              margin-top: 1rem;
             }
           }
         }
         .two {
-          display: flex;
-          padding-bottom: 2rem;
-          width: 100%;
-          padding-top: 2rem;
-
+          margin-top: 1rem;
+          padding: 1rem 1rem;
           .fileIcon {
-            background-color: rgba(237, 241, 252, 1);
             color: var(--color);
-            padding: 2rem 2rem;
-            font-size: 3rem;
+            font-size: 2.7rem;
+            margin-bottom: 1rem;
           }
           .file {
-            flex-direction: column;
             display: flex;
-            padding-left: 2rem;
-            margin-top: 2rem;
+            flex-direction: column;
+            text-align: center;
             .heading {
-              color: #333;
-              margin-bottom: 1rem;
-              font-size: 2rem;
+              color: #fff;
+              font-size: 1.6rem;
             }
             .discription {
-              font-size: 1rem;
-              font-weight: lighter;
-              color: #333;
+              font-size: 1.2rem;
+              margin-top: 1rem;
             }
           }
         }
       }
     }
     .second {
-      width: 100%;
+      margin-left: 3rem;
       .replace {
-        width: 40rem;
-        height: 20rem;
+        width: 700px;
         border-radius: 10px;
       }
       .house {
         display: flex;
-        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
         .home {
-          width: 100px;
-          border-radius: 6px;
+          width: 150px;
+          border-radius: 14px;
         }
         .state {
-          color: #333;
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 20px;
           margin-left: 1rem;
-          text-transform: capitalize;
+          color: #333;
+          max-width: 600px;
+          font-weight: lighter;
+          strong {
+            font-weight: 900;
+          }
         }
       }
     }
@@ -112,122 +97,117 @@
     background-color: var(--color);
     color: #fff;
     text-align: center;
-    height: 40vh;
+    padding: 8rem 0;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     span {
-      max-width: 500px;
       font-size: 2rem;
     }
     .than {
       position: absolute;
-      color: #121212;
-      text-align: center;
-      font-family: Plus Jakarta Sans;
-      background-color: rgba(253, 219, 58, 1);
-      padding: 0.9rem 0.8rem;
-      border-radius: 10px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      top: 15rem;
+      left: 0;
+      right: 0;
+      bottom: -3.5rem;
+      transform: translate(-9px, -50px);
       span {
-        font-size: 1.5rem;
-        font-weight: lighter;
+        background-color: gold;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        font-size: 1.3rem;
       }
     }
   }
   .Secsecond {
-    padding: 5rem 5rem;
-    display: flex;
+    background-color: color-mix(in srgb, var(--color), transparent 70%);
+    color: #fff;
     text-align: center;
-    justify-content: center;
+    padding: 8rem 4rem;
     span {
-      width: 800px;
-      color: #000;
+      font-size: 1.5rem;
     }
   }
   .data {
-    display: flex;
+    color: #fff;
     text-align: center;
+    padding: 8rem 4rem;
+    display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
     .numbers {
-      margin-left: 2rem;
       display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
       .Note {
-        background: var(--color);
-        padding: 0.9rem 0.8rem;
-        color: #fff;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color);
+        padding: 20px;
         border-radius: 10px;
+        margin-left: 2rem;
       }
     }
   }
   .footer {
-    position: absolute;
-    z-index: 1;
-    margin-top: 9rem;
-    padding: 2rem 3rem;
     .client {
+      padding: 0 3rem;
+      h3 {
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+      }
       span {
-        color: var(--black);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       .text {
-        font-weight: lighter;
-        max-width: 400px;
-        color: var(--black);
+        margin-top: 1rem;
+        font-size: 1.5rem;
       }
-
       .return {
-        margin-top: 5rem;
         display: flex;
-        gap: 1.5rem;
+        flex-basis: 50%;
+        gap: 10px;
+        margin-top: 2rem;
+
         .returnContent {
           border: 1px solid var(--color);
-          display: flex;
-          padding: 2rem 2rem;
-          border-radius: 10px;
-          position: relative;
+          padding: 20px;
+          border-radius: 5px;
           .returnSpace {
             .icon {
-              position: absolute;
-              top: -1rem;
-              background-color: var(--color);
-              color: #fff;
-              padding: 0.5rem 0.5rem;
-              border-radius: 50%;
+              font-size: 1.5rem;
+            }
+            .info {
+              font-size: 1.4rem;
+              font-weight: lighter;
             }
             .profile {
               display: flex;
-              margin-top: 3rem;
+              margin-top: 1rem;
+              justify-content: space-between;
+              text-align: center;
+              flex-wrap: wrap;
               .photo {
                 border-radius: 50%;
-                width: 50px;
-                height: 50px;
+                width: 70px;
+                height: 70px;
               }
               .group {
-                display: flex;
-                justify-content: space-between;
-                text-align: center;
-                align-items: center;
-                margin-left: 1rem;
                 .name {
-                  flex-direction: column;
                   display: flex;
+                  flex-direction: column;
                   .Name {
-                    font-size: 1rem;
-                  }
-                  .person {
-                    font-size: 0.9rem;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
                   }
                 }
                 .stars {
                   color: gold;
-                  padding-left: 3rem;
-                  display: flex;
+                  font-size: 1.3rem;
                 }
               }
             }
@@ -236,246 +216,58 @@
       }
     }
     .contact {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 9rem;
+      margin-top: 2rem;
       .secContact {
+        padding: 0 4rem;
+
         .span {
           display: flex;
           flex-direction: column;
-
           .touch {
-            color: var(--black);
-            font-size: 1.5rem;
-            margin-top: 0.4rem;
+            font-size: 1.4rem;
           }
-
           .team {
-            max-width: 350px;
-            margin-top: 2rem;
-            color: #333;
+            margin-top: 1rem;
+            font-size: 1.2rem;
           }
         }
-
         .call {
-          margin-top: 4rem;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 2rem;
           .means {
             display: flex;
-            border-bottom: 1px solid #333;
-            padding-bottom: 1rem;
-            margin-top: 2rem;
-            .phone {
-              background-color: rgba(237, 241, 252, 1);
-              color: var(--color);
-              padding: 1rem 1.5rem;
-              font-size: 1.5rem;
-            }
-
-            .digit {
-              display: flex;
-              flex-direction: column;
-              margin-left: 1rem;
-
-              .num {
-                font-size: 1.5rem;
-                margin-bottom: 0.6rem;
-              }
-              .Num {
-                color: #333;
-              }
-            }
-          }
-          .mean {
-            display: flex;
-            border-bottom: 1px solid #333;
-            padding-bottom: 1rem;
-            margin-top: 2rem;
-            .phone {
-              background-color: rgba(237, 241, 252, 1);
-              color: var(--color);
-              padding: 1rem 1.5rem;
-              font-size: 1.5rem;
-            }
-
-            .digit {
-              display: flex;
-              flex-direction: column;
-              margin-left: 1rem;
-
-              .num {
-                font-size: 1.5rem;
-                margin-bottom: 0.6rem;
-              }
-              .Num {
-                color: #333;
-              }
-            }
-          }
-        }
-      }
-
-      .information {
-        background: var(--color);
-        color: #fff;
-        padding: 3rem 5rem;
-        border-radius: 10px;
-        box-shadow: 0.1vw 0.1vw 1vw var(--color);
-        .input {
-          display: flex;
-          flex-direction: column;
-          .name {
-            font-size: 1.2rem;
-          }
-          & input {
-            background: #fff;
-            padding: 0.5rem 1rem;
-            width: 100%;
-            border: none;
-            outline: none;
-            color: #333;
-            font-size: 1rem;
-            margin-top: 0.1rem;
-          }
-        }
-        .email {
-          display: flex;
-          flex-direction: column;
-          margin-top: 1rem;
-
-          .Email {
-            font-size: 1.2rem;
-          }
-          & input {
-            background: #fff;
-            padding: 0.5rem 1rem;
-            border: none;
-            outline: none;
-            color: #333;
-            font-size: 1rem;
-            margin-top: 0.1rem;
-          }
-        }
-        .Message {
-          display: flex;
-          flex-direction: column;
-          margin-top: 1rem;
-          .message {
-            font-size: 1.2rem;
-          }
-          & textarea {
-            background: #fff;
-            border: none;
-            outline: none;
-            padding: 0.5rem 0.5rem;
-            color: #333;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-    .service {
-      margin-top: 3rem;
-      padding: 0 9rem;
-      .serContent {
-        background: var(--color);
-        padding: 5rem 2rem;
-        border-radius: 10px;
-        color: #fff;
-        text-align: center;
-        .about {
-          display: flex;
-          flex-direction: column;
-          line-height: 29px;
-          color: #fff;
-          font-size: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
-        .next {
-          font-weight: lighter;
-          width: 650px;
-          margin-left: 10rem;
-          margin-bottom: 2rem;
-        }
-      }
-    }
-    .Seccall {
-      padding: 4rem 5rem;
-      display: flex;
-      text-align: left;
-      justify-content: left;
-
-      .clean {
-        padding-right: 2rem;
-        max-width: 300px;
-        .heading {
-          display: flex;
-          font-size: 1.5rem;
-
-          .icon {
-            margin-top: 1.7rem;
-            font-size: 2rem;
-          }
-          h4 {
-            color: #000;
-            font-weight: bolder;
-          }
-        }
-        .us {
-          color: #333;
-          margin-bottom: 0.8rem;
-        }
-        .ico {
-          .fa {
-            margin-left: 1rem;
-            background: var(--color);
-            padding: 0.5rem 0.5rem;
+            gap: 10px;
+            background-color: var(--color);
             color: #fff;
-            font-size: 1rem;
-            border-radius: 50%;
-          }
-        }
-      }
-      .navigator {
-        padding-right: 2rem;
-        h3 {
-          font-size: 1.5rem;
-        }
-        ul {
-          color: #333;
-          font-size: 1rem;
-          li {
-            margin-top: 0.5rem;
-          }
-        }
-      }
-      .Links {
-        padding-right: 2rem;
-        h3 {
-          font-size: 1.5rem;
-        }
-        ul {
-          color: #333;
-          font-size: 1rem;
-          li {
-            margin-top: 0.5rem;
-          }
-        }
-      }
-      .company {
-        h3 {
-          font-size: 1.5rem;
-        }
-        ul {
-          color: #333;
-          font-size: 1rem;
-          li {
-            margin-top: 0.5rem;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding: 30px;
+            border-radius: 9px;
+            width: 100%;
 
-            .con {
-              margin-right: 0.5rem;
+            .phone {
+              background: #fff;
               color: var(--color);
-              font-size: 1.5rem;
+              padding: 10px;
+              font-size: 1.6rem;
+              border-radius: 50%;
+            }
+            .digit {
+              display: flex;
+              flex-direction: column;
+
+              .num {
+                font-size: 1.4rem;
+                font-weight: 800;
+              }
+              .Num {
+                margin-top: 0.4rem;
+                font-weight: lighter;
+              }
             }
           }
         }
@@ -483,62 +275,39 @@
     }
   }
 }
-@media (max-width: 1668px) {
-  .Mains {
-    position: absolute;
-    bottom: -165rem;
-    .secContent {
+@media (max-width: 1166px) {
+  .MaIns {
+    .secCOntent {
       .second {
-        width: 19rem;
         .replace {
-          width: 19rem;
-          height: 19 rem;
-          border-radius: 10px;
+          width: 500px;
         }
-        .house {
-          .home {
-            width: 100px;
-            height: 100px;
-          }
-          .state {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-    .secondSec {
-      .submit {
-        position: absolute;
-        top: 21rem;
       }
     }
   }
 }
-
 @media (max-width: 930px) {
-  .Mains {
-    position: absolute;
-    bottom: -10010rem;
-    width: 100%;
-    .secContent {
-      padding: 0 2.5rem;
+  .MaIns {
+    h1 {
+      letter-spacing: 5px;
+    }
+    .secCOntent {
+      justify-content: center;
+      align-items: center;
       display: flex;
       flex-direction: column;
       .first {
         h2 {
           font-size: 1.2rem;
         }
-        .singleDestination {
-          .one {
-            .file {
-              .heading {
-                font-size: 1rem;
-              }
-            }
-          }
+        .singleDEstination {
+          .one,
           .two {
             .file {
               .heading {
+                font-size: 1.4rem;
+              }
+              .discription {
                 font-size: 1rem;
               }
             }
@@ -546,121 +315,55 @@
         }
       }
       .second {
+        margin-left: 0;
+        margin-top: 2rem;
         .replace {
-          width: 150%;
+          width: 300px;
         }
         .house {
-          display: flex;
-          padding-bottom: 2rem;
-          .home {
-            width: 100%;
-          }
           .state {
+            margin-top: 1rem;
           }
         }
-      }
-    }
-    .secondSec {
-      .submit {
-        position: absolute;
-        top: 21rem;
       }
     }
     .footer {
       .client {
         .return {
           display: flex;
-          flex-direction: column;
-          width: min-content;
+          flex-basis: 50%;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 2rem;
         }
       }
       .contact {
-        display: flex;
-        flex-direction: column;
-        width: min-content;
-        padding: 0;
-        .information {
-          margin-top: 5rem;
-        }
-      }
-      .service {
-        padding: 0;
-        width: fit-content;
-      }
-      .Seccall {
-        padding: 2rem 0;
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
-}
+        margin-top: 2rem;
+        .secContact {
+          padding: 0 4rem;
 
-@media (max-width: 704px) {
-  .Mains {
-    position: absolute;
-    bottom: -2040rem;
-    .secContent {
-      display: flex;
-      flex-direction: column;
-
-      .second {
-        .replace {
-          width: 100%;
-          height: 100%;
-        }
-        .house {
-          display: flex;
-          padding-bottom: 2rem;
-          .home {
+          .span {
+            display: flex;
+            flex-direction: column;
+            .touch {
+              font-size: 1.4rem;
+            }
+            .team {
+              margin-top: 1rem;
+              font-size: 1.2rem;
+            }
+          }
+          .call {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
             width: 100%;
-          }
-          .state {
+            margin-top: 2rem;
           }
         }
       }
     }
-  }
-}
-@media (max-width: 524px) {
-  .Mains {
-    position: absolute;
-    bottom: -279rem;
-  }
-}
-@media (max-width: 477px) {
-  .Mains {
-    position: absolute;
-    bottom: -289rem;
-  }
-}
-@media (max-width: 462px) {
-  .Mains {
-    position: absolute;
-    bottom: -299rem;
-  }
-}
-@media (max-width: 443px) {
-  .Mains {
-    position: absolute;
-    bottom: -309rem;
-  }
-}
-@media (max-width: 416px) {
-  .Mains {
-    position: absolute;
-    bottom: -315rem;
-  }
-}
-@media (max-width: 410px) {
-  .Mains {
-    position: absolute;
-    bottom: -320rem;
-  }
-}
-@media (max-width: 394px) {
-  .Mains {
-    position: absolute;
-    bottom: -340rem;
   }
 }

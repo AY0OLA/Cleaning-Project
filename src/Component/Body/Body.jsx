@@ -64,15 +64,13 @@ const Body = () => {
                 needs, most clients schedule regular cleaning services:
               </span>
             </div>
-            <a className="see btn">
+            <a className="btn">
               See More
-              <span className="arrow">
-                <IoIosArrowRoundForward />
-              </span>
+              <IoIosArrowRoundForward className="arrow" />
             </a>
           </div>
         </div>
-        <div data-aos="fade-up" className="bodygride grid">
+        <div data-aos="fade-up" className="bodygride">
           {Data.map(({ id, header, discription, click }) => {
             return (
               <div data-aos="fade-up" key={id} className="Destination">
@@ -84,7 +82,7 @@ const Body = () => {
                   <div className="head">{header}</div>
                   <div className="discription">{discription}</div>
 
-                  <div className="click">
+                  <div className="clic">
                     <a href="#">{click}</a>
                     <div className="forward">
                       <IoIosArrowRoundForward />

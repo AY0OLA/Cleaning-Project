@@ -4,6 +4,7 @@ import Header from "./Component/Header/Header";
 import Links from "./Component/Links/Links";
 import Body from "./Component/Body/Body";
 import Mains from "./Component/Mains/Mains";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Links />
       <Body />
       <Mains />
+      <Footer />
     </>
   );
 }
