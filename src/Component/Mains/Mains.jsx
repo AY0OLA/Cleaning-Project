@@ -80,10 +80,10 @@ const Mains = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="second">
-            <img src="src/image/new.png" alt="clearner" className="replace" />
+            <img src="/src/image/new.png" alt="clearner" className="replace" />
 
             <div className="house">
-              <img src="src/image/new2.png" alt="" className="home" />
+              <img src="/src/image/new2.png" alt="" className="home" />
               <div className="state">
                 <strong>Fringilla scelerisque</strong> in imperdiet nisi erat in
                 id. Vel fermentum aenean aenean id ornare vitae sapien nulla
@@ -137,7 +137,7 @@ const Mains = () => {
                     my house clean.”
                   </span>
                   <div className="profile">
-                    <img src="src/image/cilent.png" className="photo" />
+                    <img src="/src/image/cilent.png" className="photo" />
                     <div className="group">
                       <div className="name">
                         <span className="Name">Nazmi Javier</span>
@@ -165,7 +165,7 @@ const Mains = () => {
                     being able to upload a link and bounce”
                   </span>
                   <div className="profile">
-                    <img src="src/image/cilent2.png" className="photo" />
+                    <img src="/src/image/cilent2.png" className="photo" />
                     <div className="group">
                       <div className="name">
                         <span className="Name">Chintya Xin</span>
@@ -193,7 +193,7 @@ const Mains = () => {
                     being able to upload a link and bounce”
                   </span>
                   <div className="profile">
-                    <img src="src/image/cilent3.png" className="photo" />
+                    <img src="/src/image/cilent3.png" className="photo" />
                     <div className="group">
                       <div className="name">
                         <span className="Name">Braun Yes</span>
