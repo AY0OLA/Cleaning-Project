@@ -55,7 +55,7 @@ const Header = () => {
             </li>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar">
-            <IoMdCloseCircle classname="icon" />
+            <IoMdCloseCircle className="icon" />
           </div>
           <div className="ntg">
             <button className="btn">

@@ -83,7 +83,7 @@ const Mains = () => {
             <img src="/src/image/new.png" alt="clearner" className="replace" />
 
             <div className="house">
-              <img src="/src/image/new2.png" alt="" className="home" />
+              <img src="src/image/new2.png" alt="" className="home" />
               <div className="state">
                 <strong>Fringilla scelerisque</strong> in imperdiet nisi erat in
                 id. Vel fermentum aenean aenean id ornare vitae sapien nulla
